@@ -1,0 +1,96 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(Imagenes/Imagenfondo.png) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: calc(100% - 240px);
+    padding-bottom: 50px;
+    margin-bottom: 190px;
+}
+
+.footer{
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 190px;
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+}
+
+.c1{
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img{
+    height: 70px;
+    align-items: center;
+}
+
+.navbar{
+    background-color:darkmagenta;
+}
+
+.A{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+#K{
+    background-color: darkmagenta;
+}
+
+#PreLogo img{
+    width: 80px;
+    height: 80px;
+    margin: 0px 115px;
+    display: flex;
+}
+
+.c2{
+    color: white;
+}
+
+#Fb{
+    color: blue;
+}
+
+#Ig{
+    color: darkorange;
+}
+
+#Yt{
+    color: red;
+}
+
+#SBN{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+    background-color: darkmagenta;
+    border: 2px solid;
+    border-color: white;
+}   
+  
+#SB{
+    background-color: darkmagenta;
+    border: 2px solid;
+    border-color: white; 
+}  

@@ -1,0 +1,177 @@
+body{
+    background: url(Imagenes/Imagenfondo.png) no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.c1{
+    color: white;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand img{
+    height: 70px;
+    align-items: center;
+}
+
+.navbar{
+    background-color:darkmagenta;
+}
+
+.A{
+    color: white;
+}
+
+.nav-link{
+    color: white;
+}
+
+#K{
+    background-color: darkmagenta;
+}
+
+#PreLogo img{
+    width: 80px;
+    height: 80px;
+    margin: 0px 50px;
+    display: flex;
+}
+
+.c2{
+    color: white;
+}
+
+#Fb{
+    color: blue;
+}
+
+#Ig{
+    color: darkorange;
+}
+
+#Yt{
+    color: red;
+}
+
+
+.carrusel-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+  
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    transition: transform 0.5s ease;
+}
+  
+
+.control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+  
+.control-left {
+    left: 20px;
+}
+  
+.control-right {
+    right: 20px;
+}
+  
+.diapositiva {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    margin-right: 20px;
+    background-color: #ccc;
+}
+  
+.diapositiva:last-child {
+    margin-right: 0;
+}
+
+.carrusel-container {
+    width: 80%;
+    margin: auto;
+}
+  
+.carrusel-slide img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+
+.slick-slide img {
+    max-width: 10px;
+    height: auto;
+    display: block;
+}
+
+.slider img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.slick-prev:after {
+    display: none;
+}
+
+.slick-next:after {
+    display: none;
+}
+
+.slick-prev {
+    left: -60px;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: darkmagenta;
+    border: 2px solid #fff;
+    font-size: 24px;
+    color: #fff;
+    content: "Anterior";
+    margin: 0 10px 0 0;
+}
+
+.slick-next {
+    right: -60px;
+    z-index: 1;
+    padding: 10px 20px;
+    background-color: darkmagenta;
+    border: 2px solid #fff;
+    font-size: 24px;
+    color: #fff;
+    content: "Siguiente";
+    margin: 0 0 0 10px;
+}
+
+  
+  
