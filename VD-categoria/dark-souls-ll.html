@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,19 +46,20 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/Return_of_the_Obra_Dinn.jpg" class="MIG">
+        <img src="imagenes/Dark_Souls_II.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">es un juego de aventuras y rompecabezas en primera persona. El juego se desarrolla en 1807 y el jugador asume el papel de 
-          inspector de seguros para la East India Company. El Obra Dinn, un barco mercante desaparecido durante cinco años, ha reaparecido frente 
-          a la costa de Inglaterra sin nadie vivo a bordo. El jugador es enviado al barco fantasma para realizar una tasación, reconstruir los 
-          eventos del viaje y determinar el destino de las sesenta almas a bordo, proporcionando una causa de muerte para los fallecidos o una 
-          ubicación probable actual para aquellos que se presume están vivos.</p>
-        <p id="Des1">Precio: $3.100</p>
+        <p id="Des1">es un juego de rol de acción, es conocido por su dificultad, ya que tanto los jefes como los enemigos estándar tienen el 
+          potencial de derrotar al jugador en solo unos pocos golpes. El mal juego es castigado severamente por la mayoría de los enemigos, las 
+          oportunidades para recuperar la salud son limitadas y con cada muerte, la salud máxima del jugador se reduce El juego utiliza una forma 
+          de moneda conjunta llamada “almas”, que se utilizan tanto como puntos de experiencia para subir de nivel como moneda para comprar 
+          artículos en tiendas. Al morir, toda la colección de almas del jugador se deja caer; el jugador puede recuperar sus almas dejadas caer 
+          volviendo al lugar donde murió, pero si muere antes de recogerlas, las almas se pierden permanentemente</p>
+        <p id="Des1">Precio: $16.400</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Adventure, Indie, Mistery</p>
+        <p id="Des1">Género: Action, RPG, Fantasy</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -100,7 +101,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=Return%20of%20the%20Obra%20Dinn&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Dark Souls II&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

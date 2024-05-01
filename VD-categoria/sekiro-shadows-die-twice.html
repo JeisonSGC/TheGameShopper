@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,17 +46,17 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/World-of Warcraft.jpg" class="MIG">
+        <img src="imagenes/Sekiro_Shadows_Die_Twice.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">Estabas destinado a más. Estabas destinado a una aventura épica. Tal vez incluso la grandeza. Para cargar a tus enemigos sin miedo. 
-          Vivir audazmente y correr con camaradas que nunca supiste que tenías. Para experimentar lo imposible. Desciende a World of Warcraft y 
-          únete a millones de poderosos héroes en un mundo en línea de mitos, magia y aventuras ilimitadas. Te esperan infinidad de experiencias.</p>
-        <p id="Des1">Precio: $2.000</p>
+        <p id="Des1">El juego sigue a un shinobi del Período Sengoku, conocido como Lobo, que intenta vengarse de un clan de samuráis que atacó y 
+          secuestró a su maestro. El juego se juega desde una vista en tercera persona y se centra en el sigilo, la exploración y el combate, con 
+          un énfasis particular en las batallas contra jefes.</p>
+        <p id="Des1">Precio: $23.000</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: RPG, Massively Multiplayer, Action</p>
+        <p id="Des1">Género: Action, RPG, Fantasy</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -98,7 +98,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=World%20of%20Warcraft&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Sekiro%3A%20Shadows%20Die%20Twice&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,18 +46,16 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/the_forgotten_city.jpg" class="MIG">
+        <img src="imagenes/thimbleweed_park.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">La historia de The Forgotten City explora la relación existencial entre la humanidad y sus leyes. El juego comienza con el 
-          protagonista despertando después de ser rescatado de flotar por el río Tíber en Italia. La misteriosa persona que rescata al personaje 
-          del jugador le pide que busque a su amiga, que había desaparecido mientras investigaba ruinas cercanas. A medida que el jugador explora 
-          dichas ruinas, son enviados hacia la era del Imperio Romano en la ciudad ahora restaurada.</p>
-        <p id="Des1">Precio: $4.300</p>
+        <p id="Des1"> El juego se considera una secuela de Maniac Mansion y The Secret of Monkey Island, y se diseñó específicamente para resultar 
+          similar, tanto visualmente como en el modo de control</p>
+        <p id="Des1">Precio: $1.300</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Action, Adventure, RPG, Indie, Mistery</p>
+        <p id="Des1">Género: Adventure, Indie, Puzzle, Mistery</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -68,7 +66,7 @@
       <button class="Boton">Comprar</button>
     </div><br>
 
-    <div class="container-fluid" id="footer"> 
+    <div class="container-fluid" id="footer">
       <div class="row p-5" id="K">
         <div class="col-xs-12 col-md-6 col-lg-3" id="PreLogo">
           <h4 class="c1">TheGameShopper</h4>
@@ -99,7 +97,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=The%20Forgotten%20City&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Thimbleweed%20Park&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

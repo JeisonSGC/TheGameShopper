@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,20 +46,19 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/Dark_Souls_II.jpg" class="MIG">
+        <img src="imagenes/Friday-the-13th the-game.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">es un juego de rol de acción, es conocido por su dificultad, ya que tanto los jefes como los enemigos estándar tienen el 
-          potencial de derrotar al jugador en solo unos pocos golpes. El mal juego es castigado severamente por la mayoría de los enemigos, las 
-          oportunidades para recuperar la salud son limitadas y con cada muerte, la salud máxima del jugador se reduce El juego utiliza una forma 
-          de moneda conjunta llamada “almas”, que se utilizan tanto como puntos de experiencia para subir de nivel como moneda para comprar 
-          artículos en tiendas. Al morir, toda la colección de almas del jugador se deja caer; el jugador puede recuperar sus almas dejadas caer 
-          volviendo al lugar donde murió, pero si muere antes de recogerlas, las almas se pierden permanentemente</p>
-        <p id="Des1">Precio: $16.400</p>
+        <p id="Des1">Friday the 13th: The Game es un juego de horror y supervivencia en tercera persona donde los jugadores asumen el papel de un 
+          consejero adolescente o, por primera vez, de Jason Voorhees. Tú y otros seis desafortunados harán todo lo posible para escapar y 
+          sobrevivir mientras el asesino más conocido del mundo te persigue y te mata brutalmente. El juego es un juego multijugador asimétrico, 
+          enfrentando a hasta siete jugadores que controlan a los consejeros de Camp Crystal Lake contra un jugador que controla a Jason Voorhees. 
+          Es un juego semi-abierto, con jugadores capaces de explorarlo más a fondo</p>
+        <p id="Des1">Precio: $17.200</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Action, RPG, Fantasy</p>
+        <p id="Des1">Género: Action, Adventure, Terror</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -101,7 +100,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=Dark Souls II&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Friday%20the%2013th%20the%20game&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

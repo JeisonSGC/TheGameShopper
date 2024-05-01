@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,19 +46,18 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/Tom Clancy’s Rainbow Six.jpg" class="MIG">
+        <img src="imagenes/the_forgotten_city.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">es una franquicia de videojuegos de disparos tácticos en primera persona.  La franquicia gira en torno a una organización 
-          antiterrorista internacional ficticia llamada Rainbow. Hay varios juegos en la serie, incluyendo Tom Clancy’s Rainbow Six Siege, que es 
-          un juego de disparos en primera persona en el que los jugadores utilizan muchos operadores diferentes del equipo Rainbow. Los diferentes 
-          operadores tienen diferentes nacionalidades, armas y dispositivos. El juego presenta una estructura asimétrica en la que los equipos no 
-          siempre están equilibrados en sus elecciones de habilidades.</p>
-        <p id="Des1">Precio: $2.800</p>
+        <p id="Des1">La historia de The Forgotten City explora la relación existencial entre la humanidad y sus leyes. El juego comienza con el 
+          protagonista despertando después de ser rescatado de flotar por el río Tíber en Italia. La misteriosa persona que rescata al personaje 
+          del jugador le pide que busque a su amiga, que había desaparecido mientras investigaba ruinas cercanas. A medida que el jugador explora 
+          dichas ruinas, son enviados hacia la era del Imperio Romano en la ciudad ahora restaurada.</p>
+        <p id="Des1">Precio: $4.300</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Action, Shooter, Adventure, Strategy</p>
+        <p id="Des1">Género: Action, Adventure, RPG, Indie, Mistery</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -69,7 +68,7 @@
       <button class="Boton">Comprar</button>
     </div><br>
 
-    <div class="container-fluid" id="footer">
+    <div class="container-fluid" id="footer"> 
       <div class="row p-5" id="K">
         <div class="col-xs-12 col-md-6 col-lg-3" id="PreLogo">
           <h4 class="c1">TheGameShopper</h4>
@@ -100,7 +99,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=Tom%20Clancy%27s%20Rainbow%20Six&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=The%20Forgotten%20City&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

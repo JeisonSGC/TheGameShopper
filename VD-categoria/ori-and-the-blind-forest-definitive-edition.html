@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,17 +46,20 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/Sekiro_Shadows_Die_Twice.jpg" class="MIG">
+        <img src="imagenes/Ori_and_the_Blind_Forest_Definitive_Edition.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">El juego sigue a un shinobi del Período Sengoku, conocido como Lobo, que intenta vengarse de un clan de samuráis que atacó y 
-          secuestró a su maestro. El juego se juega desde una vista en tercera persona y se centra en el sigilo, la exploración y el combate, con 
-          un énfasis particular en las batallas contra jefes.</p>
-        <p id="Des1">Precio: $23.000</p>
+        <p id="Des1">El bosque de Nibel se está muriendo. Después de que una poderosa tormenta pone en marcha una serie de eventos devastadores, 
+          Ori debe viajar para encontrar coraje y enfrentarse a un némesis oscuro para salvar el bosque de Nibel. “Ori and the Blind Forest” 
+          cuenta la historia de un joven huérfano destinado a la heroicidad, a través de un Action-Platformer visualmente impresionante creado por 
+          Moon Studios. Con obras de arte pintadas a mano, interpretación de personajes meticulosamente animada, una partitura totalmente 
+          orquestada y docenas de características nuevas en Definitive Edition, "Ori and the Blind Forest" explora una historia profundamente 
+          emotiva sobre el amor y el sacrificio, y la esperanza que existe en todos nosotros.</p>
+        <p id="Des1">Precio: $7.000</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Action, RPG, Fantasy</p>
+        <p id="Des1">Género: Adventure, Platformer</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -98,7 +101,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=Sekiro%3A%20Shadows%20Die%20Twice&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Ori%20and%20the%20Blind%20Forest%3A%20Definitive%20Edition&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   

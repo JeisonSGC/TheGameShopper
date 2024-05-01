@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
-        <a class="navbar-brand" href="../PaginaVideojuego.html">
+        <a class="navbar-brand" href="../index.html">
           <img src="../Imagenes/Logo.png" atl="logo de la tienda">
           <span class="A">TheGameShopper</span>
         </a>
@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="navbar-item">
-              <a class="nav-link" href="../Mis Comprar.html">Mis compras</a>
+              <a class="nav-link" href="../mis-compras.html">Mis compras</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Categoria.html">Categorias</a>
+              <a class="nav-link" href="../categoria.html">Categorias</a>
             </li>
             <li class="navbar-item">
-              <a class="nav-link" href="../Sobre Nosotros.html">Sobre Nosotros</a>
+              <a class="nav-link" href="../sobre-nosotros.html">Sobre Nosotros</a>
             </li>
           </ul>
         </div>
@@ -46,19 +46,19 @@
 
     <div class="row">
       <div class="col-md-6" id="IMG">
-        <img src="imagenes/Friday-the-13th the-game.jpg" class="MIG">
+        <img src="imagenes/Return_of_the_Obra_Dinn.jpg" class="MIG">
       </div>
 
       <div class="col-md-6" id="IMG">
         <h2 class="c1" id="nombreVideojuego">Cargando...</h2>
-        <p id="Des1">Friday the 13th: The Game es un juego de horror y supervivencia en tercera persona donde los jugadores asumen el papel de un 
-          consejero adolescente o, por primera vez, de Jason Voorhees. Tú y otros seis desafortunados harán todo lo posible para escapar y 
-          sobrevivir mientras el asesino más conocido del mundo te persigue y te mata brutalmente. El juego es un juego multijugador asimétrico, 
-          enfrentando a hasta siete jugadores que controlan a los consejeros de Camp Crystal Lake contra un jugador que controla a Jason Voorhees. 
-          Es un juego semi-abierto, con jugadores capaces de explorarlo más a fondo</p>
-        <p id="Des1">Precio: $17.200</p>
+        <p id="Des1">es un juego de aventuras y rompecabezas en primera persona. El juego se desarrolla en 1807 y el jugador asume el papel de 
+          inspector de seguros para la East India Company. El Obra Dinn, un barco mercante desaparecido durante cinco años, ha reaparecido frente 
+          a la costa de Inglaterra sin nadie vivo a bordo. El jugador es enviado al barco fantasma para realizar una tasación, reconstruir los 
+          eventos del viaje y determinar el destino de las sesenta almas a bordo, proporcionando una causa de muerte para los fallecidos o una 
+          ubicación probable actual para aquellos que se presume están vivos.</p>
+        <p id="Des1">Precio: $3.100</p>
         <p id="plataformaVideojuego">Cargando...</p>
-        <p id="Des1">Género: Action, Adventure, Terror</p>
+        <p id="Des1">Género: Adventure, Indie, Mistery</p>
         <p id="fechaLanzamientoVideojuego">Cargando...</p>
         <p id="clasificacionVideojuego">Cargando...</p>
         <p id="tagVideojuego">Cargando...</p>
@@ -100,7 +100,7 @@
       const fechaLanzamientoVideojuegoElement = document.querySelector("#fechaLanzamientoVideojuego");
       const clasificacionVideojuegoElement = document.querySelector("#clasificacionVideojuego");
   
-      fetch('https://api.rawg.io/api/games?search=Friday%20the%2013th%20the%20game&key=Ingrese aqui su API KEY')
+      fetch('https://api.rawg.io/api/games?search=Return%20of%20the%20Obra%20Dinn&key=Ingrese aqui su API KEY')
         .then(response => response.json())
         .then(data => {
   
