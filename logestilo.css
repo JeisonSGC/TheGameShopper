@@ -1,0 +1,71 @@
+#fondo {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Imagenes/loginfondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); 
+    z-index: -1; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #222;
+    color: #fff;
+}
+
+.contenedor {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #673AB7;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #512DA8;
+}
+
+#mensaje {
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(219, 219, 219);
+}
+
