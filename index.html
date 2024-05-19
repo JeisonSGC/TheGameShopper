@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
+
     <div id="animacionInicio">
       <div class="letra" id="letraT">T</div>
       <div class="letra" id="letraH">H</div>
@@ -31,6 +32,8 @@
       <div class="letra" id="letraR">R</div>
       <img src="Imagenes/Logo.png" alt="Logotipo TheGameShopper" id="icono"> </div>
     </div>
+
+    
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
 
@@ -60,6 +63,14 @@
         </div>
       </div>          
     </nav>
+
+    <img src="Imagenes/logomap.png" alt="Icono de mapa" id="map-icon">
+    <div id="dialog-box">
+      <span class="close">&times;</span> 
+      <h2>Mapa</h2>
+      <div id="map"></div>
+    </div>
+
     <section class="container">
         <div class="row" id="B">
             <div class="col-md-6">
@@ -101,6 +112,7 @@
         </div> 
             
     </section>
+
     <br>
     <br>
     <section class="container">
@@ -118,7 +130,6 @@
       <div><a href="VD-categoria/alan-wake-remastered.html"><img src="ImagenesVideojuegos/Misterio/alan-wake-remastered.jpg"></a></div>
       <div><a href="VD-categoria/monster-hunter-world-iceborne-master-edition-cover.html"><img src="ImagenesVideojuegos/Aventura/monster-hunter-world-iceborne-master-edition-cover.jpg"></a></div>
     </div><br>
-
 
 
     <div class="container-fluid">
@@ -181,5 +192,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="inicio.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=Inserte API aqui&callback=iniciarMap"></script>
   </body>
 </html>

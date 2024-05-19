@@ -106,3 +106,14 @@ body{
     border-color: white;
     margin-top: 10px;
 }
+
+.modal-content {
+    background-color: #D8BFD8;
+    color: white;
+  }
+  .modal-header, .modal-body {
+    border-color: white;
+  }
+  .btn-primary, .btn-secondary {
+    color: white;
+  }
