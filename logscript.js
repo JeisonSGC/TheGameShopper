@@ -6,8 +6,15 @@ const seleccion = document.getElementById('seleccion');
 const usuario = document.getElementById('usuario');
 const administrador = document.getElementById('administrador');
 
-let usuariosRegistrados = [];
-let administradoresRegistrados = [];
+function obtenerUsuariosRegistrados() {
+    return JSON.parse(localStorage.getItem('usuariosRegistrados')) || [];
+}
+
+function guardarUsuarioRegistrado(usuario) {
+    let usuariosRegistrados = obtenerUsuariosRegistrados();
+    usuariosRegistrados.push(usuario);
+    localStorage.setItem('usuariosRegistrados', JSON.stringify(usuariosRegistrados));
+}
 
 function registrar(individuo) {
     const rut = document.getElementById('rut').value;
@@ -15,22 +22,13 @@ function registrar(individuo) {
     const correo = document.getElementById('correo').value;
     const contrasena = document.getElementById('contrasena').value;
 
-    const nuevoIndividuo = {
-        rut: rut,
-        nombre: nombre,
-        correo: correo,
-        contrasena: contrasena
-    };
+    const nuevoIndividuo = { rut, nombre, correo, contrasena, tipo: individuo };
 
-    if (individuo === 'usuario') {
-        usuariosRegistrados.push(nuevoIndividuo);
-        mensaje.textContent = '¡Usuario registrado con éxito!';
-    } else if (individuo === 'administrador') {
-        administradoresRegistrados.push(nuevoIndividuo);
-        mensaje.textContent = '¡Administrador registrado con éxito!';
-    }
+    guardarUsuarioRegistrado(nuevoIndividuo);
 
-    registro.reset();
+    mensaje.textContent = `¡${individuo.charAt(0).toUpperCase() + individuo.slice(1)} registrado con éxito!`;
+
+    document.getElementById('formRegistro').reset();
 }
 
 usuario.addEventListener('click', () => {
@@ -39,7 +37,7 @@ usuario.addEventListener('click', () => {
         seleccion.style.display = 'none';
         registro.style.display = 'block';
         registro.classList.add('animate__animated', 'animate__slideInRight');
-    }, 1000); 
+    }, 1000);
 
     registro.removeEventListener('submit', registrar);
     registro.addEventListener('submit', (e) => {
@@ -54,7 +52,7 @@ administrador.addEventListener('click', () => {
         seleccion.style.display = 'none';
         registro.style.display = 'block';
         registro.classList.add('animate__animated', 'animate__slideInRight');
-    }, 1000); 
+    }, 1000);
 
     registro.removeEventListener('submit', registrar);
     registro.addEventListener('submit', (e) => {
@@ -69,22 +67,16 @@ login.addEventListener('submit', (e) => {
     const nombreLogin = document.getElementById('nombreLogin').value;
     const contrasenaLogin = document.getElementById('contrasenaLogin').value;
 
+    const usuariosRegistrados = obtenerUsuariosRegistrados();
+
     const usuarioEncontrado = usuariosRegistrados.find(usuario => 
         usuario.nombre === nombreLogin && usuario.contrasena === contrasenaLogin
     );
 
-    const administradorEncontrado = administradoresRegistrados.find(administrador => 
-        administrador.nombre === nombreLogin && administrador.contrasena === contrasenaLogin
-    );
-
     if (usuarioEncontrado) {
         mensaje.textContent = `¡Bienvenido, ${usuarioEncontrado.nombre}!`;
+        localStorage.setItem('usuarioActual', JSON.stringify(usuarioEncontrado));
         window.location.href = 'index.html';
-    } else if (administradorEncontrado) {
-        mensaje.textContent = `¡Bienvenido, ${administradorEncontrado.nombre}!`;
-        window.location.href = 'admin.html';
-    } else if (usuariosRegistrados.length === 0 && administradoresRegistrados.length === 0) {
-        mensaje.textContent = '¡No hay individuos registrados! Primero debes registrarte.';
     } else {
         mensaje.textContent = '¡Nombre o contraseña incorrectos! Inténtalo de nuevo.';
     }

@@ -6,57 +6,42 @@
     <title>Registro y Login Gamer</title>
     <link rel="stylesheet" href="logestilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
 </head>
 <body>
-
     <div id="fondo"></div>
-
-
     <div class="contenedor">
         <h1>¡Únete al Gaming!</h1>
-
         <div class="formulario" id="seleccion">
             <h2>El individuo es:</h2>
             <button id="usuario">Usuario</button>
             <button id="administrador">Administrador</button>
         </div>
-
         <div class="formulario" id="registro">
             <h2>Registro</h2>
-            <form action="#">
+            <form id="formRegistro">
                 <label for="rut">RUT:</label>
                 <input type="text" id="rut" name="rut" required>
-
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
-
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" name="correo" required>
-
                 <label for="contrasena">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" required>
-
                 <button type="submit">Registrarse</button>
             </form>
         </div>
-
         <div class="formulario" id="login">
             <h2>Inicio de sesión</h2>
-            <form action="#">
+            <form id="formLogin">
                 <label for="nombreLogin">Nombre:</label>
                 <input type="text" id="nombreLogin" name="nombreLogin" required>
-
                 <label for="contrasenaLogin">Contraseña:</label>
                 <input type="password" id="contrasenaLogin" name="contrasenaLogin" required>
-
                 <button type="submit">Iniciar sesión</button>
             </form>
         </div>
-
         <div id="mensaje"></div>
     </div>
-
     <script src="logscript.js"></script>
 </body>
 </html>
