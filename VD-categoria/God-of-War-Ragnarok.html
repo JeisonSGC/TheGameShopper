@@ -68,8 +68,55 @@
     </div>
 
     <div class="col-md-6" id="IM">
-      <button class="Boton">Comprar</button>
+      <button class="Boton" id="comprarBtn">Comprar</button>
     </div><br>
+
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paymentModalLabel">Seleccionar método de pago</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <button class="btn btn-primary" id="creditoBtn">Crédito</button>
+            <button class="btn btn-secondary" id="debitoBtn">Débito</button>
+
+            <form id="creditoForm" class="mt-3" style="display: none;">
+              <div class="mb-3">
+                <label for="creditoNumero" class="form-label">Número de Tarjeta de Crédito</label>
+                <input type="text" class="form-control" id="creditoNumero" pattern="\d{16}" title="Debe contener 16 dígitos">
+              </div>
+              <div class="mb-3">
+                <label for="creditoFecha" class="form-label">Fecha de Vencimiento</label>
+                <input type="text" class="form-control" id="creditoFecha" pattern="\d{2}/\d{2}" title="Formato MM/AA">
+              </div>
+              <div class="mb-3">
+                <label for="creditoCVV" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="creditoCVV" pattern="\d{3}" title="Debe contener 3 dígitos">
+              </div>
+              <button type="button" class="btn btn-success" id="creditoContinuar">Continuar</button>
+            </form>
+
+            <form id="debitoForm" class="mt-3" style="display: none;">
+              <div class="mb-3">
+                <label for="debitoNumero" class="form-label">Número de Tarjeta de Débito</label>
+                <input type="text" class="form-control" id="debitoNumero" pattern="\d{16}" title="Debe contener 16 dígitos">
+              </div>
+              <div class="mb-3">
+                <label for="debitoFecha" class="form-label">Fecha de Vencimiento</label>
+                <input type="text" class="form-control" id="debitoFecha" pattern="\d{2}/\d{2}" title="Formato MM/AA">
+              </div>
+              <div class="mb-3">
+                <label for="debitoCVV" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="debitoCVV" pattern="\d{3}" title="Debe contener 3 dígitos">
+              </div>
+              <button type="button" class="btn btn-success" id="debitoContinuar">Continuar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container-fluid" id="footer">
       <div class="row p-5" id="K">
@@ -123,6 +170,7 @@
           console.error('Error:', error);
         });
     </script>
+    <script src="vdlg.js"></script>
   </body>
 
 </html>
